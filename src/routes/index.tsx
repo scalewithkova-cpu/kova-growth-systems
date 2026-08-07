@@ -356,51 +356,96 @@ function Index() {
           </div>
         </section>
 
-        {/* ABOUT */}
-        <section id="about" className="scroll-mt-24 border-t border-border bg-surface/40 px-5 py-20 sm:px-8 sm:py-32">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-20">
-            <div>
-              <Reveal>
-                <SectionLabel>05 — Behind KOVA</SectionLabel>
-              </Reveal>
-              <Reveal delay={80}>
-                <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
-                  Built by <span className="font-serif text-champagne italic">Brayden.</span>
-                </h2>
-              </Reveal>
-              <Reveal delay={140}>
-                <div className="mt-10 flex aspect-4/5 max-w-sm items-end rounded-sm border border-border bg-[oklch(0.115_0_0)] p-6">
-                  <p className="text-xs text-muted-foreground/70">Founder portrait — coming soon</p>
+        {/* THE MOTIVE */}
+        <section
+          id="why-kova"
+          className="scroll-mt-24 border-t border-border bg-surface/40 px-5 py-20 sm:px-8 sm:py-32"
+        >
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+              <div>
+                <Reveal>
+                  <SectionLabel>05 — WHY KOVA</SectionLabel>
+                </Reveal>
+                <Reveal delay={80}>
+                  <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+                    Building the proof,
+                    <br />
+                    <span className="font-serif text-champagne italic">
+                      not pretending it already exists.
+                    </span>
+                  </h2>
+                </Reveal>
+              </div>
+              <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg lg:pt-20">
+                <Reveal delay={120}>
+                  <p>KOVA is being documented from the beginning.</p>
+                </Reveal>
+                <Reveal delay={180}>
+                  <p>
+                    The campaigns, lessons, wins, mistakes and growth behind the company are being
+                    built in real time — with the goal of creating something backed by actual results
+                    rather than marketing claims.
+                  </p>
+                </Reveal>
+                <Reveal delay={240}>
+                  <p className="text-foreground">
+                    This isn&apos;t about looking bigger than we are.
+                  </p>
+                </Reveal>
+                <Reveal delay={300}>
+                  <p>
+                    It&apos;s about becoming better at what we do, proving it through client
+                    outcomes, and building KOVA into something worth following.
+                  </p>
+                </Reveal>
+              </div>
+            </div>
+
+            <Reveal delay={200}>
+              <div className="relative mt-20 overflow-hidden rounded-sm border border-border bg-background">
+                <div className="absolute inset-0 hairline-grid opacity-20" />
+                <div className="relative grid gap-px bg-border md:grid-cols-2">
+                  <div className="bg-background p-8 sm:p-12">
+                    <p className="label-xs text-champagne/70">The company</p>
+                    <p className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+                      KOVA
+                    </p>
+                    <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+                      Customer acquisition for local service businesses.
+                    </p>
+                  </div>
+                  <div className="bg-background p-8 sm:p-12">
+                    <p className="label-xs text-champagne/70">The journey</p>
+                    <p className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+                      KovaScales
+                    </p>
+                    <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+                      The process behind building KOVA from zero.
+                    </p>
+                  </div>
                 </div>
-              </Reveal>
-            </div>
-            <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg lg:pt-24">
-              <Reveal delay={100}>
-                <p className="text-foreground">I&rsquo;m Brayden, the person behind KOVA.</p>
-              </Reveal>
-              <Reveal delay={160}>
-                <p>
-                  I&rsquo;m building KOVA around customer acquisition for local service businesses
-                  — starting with landscaping, hardscaping and tree-service companies.
+              </div>
+            </Reveal>
+
+            <Reveal delay={280}>
+              <div className="mt-12 flex flex-col items-start gap-6 border-t border-border pt-12 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="label-xs text-champagne/70">FOLLOW THE BUILD</p>
+                  <a
+                    href="https://instagram.com/KovaScales"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-flex items-center gap-2 text-2xl font-medium tracking-tight text-foreground transition-opacity hover:opacity-75"
+                  >
+                    @KovaScales <span className="text-champagne">→</span>
+                  </a>
+                </div>
+                <p className="max-w-sm text-sm text-muted-foreground">
+                  KovaScales documents the lessons, experiments and growth behind KOVA in real time.
                 </p>
-              </Reveal>
-              <Reveal delay={220}>
-                <p>
-                  I&rsquo;m documenting the process publicly through KovaScales while building the
-                  systems, experience and track record behind the company.
-                </p>
-              </Reveal>
-              <Reveal delay={280}>
-                <a
-                  href="https://instagram.com/KovaScales"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 border-b border-champagne/40 pb-1 text-sm text-champagne transition-colors hover:border-champagne"
-                >
-                  Instagram → @KovaScales
-                </a>
-              </Reveal>
-            </div>
+              </div>
+            </Reveal>
           </div>
         </section>
 
