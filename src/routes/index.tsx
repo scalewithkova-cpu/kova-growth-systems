@@ -269,99 +269,183 @@ function Index() {
 
         {/* BUILDING KOVA */}
         <section className="border-t border-border px-5 py-20 sm:px-8 sm:py-32">
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <Reveal>
-                <SectionLabel>04 — Building KOVA</SectionLabel>
-              </Reveal>
-              <Reveal delay={80}>
-                <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
-                  Built publicly.
-                  <br />
-                  <span className="font-serif text-champagne italic">Measured by results.</span>
-                </h2>
-              </Reveal>
-            </div>
-            <div>
-              <Reveal delay={120}>
-                <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  KOVA is being built from the ground up around a simple principle: prove the
-                  system through real businesses, real campaigns and real outcomes.
-                </p>
-              </Reveal>
-              <div className="mt-10 border-t border-border">
-                {["No inflated case studies.", "No fake screenshots.", "No borrowed results."].map(
-                  (t, i) => (
-                    <Reveal key={t} delay={i * 80}>
-                      <p className="border-b border-border py-4 text-foreground/90">{t}</p>
-                    </Reveal>
-                  ),
-                )}
+          <div className="relative mx-auto max-w-7xl">
+            <div className="hairline-grid pointer-events-none absolute inset-0 opacity-40" />
+            <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-20">
+              <div>
+                <Reveal>
+                  <SectionLabel>04 — BUILDING KOVA</SectionLabel>
+                </Reveal>
+                <Reveal delay={80}>
+                  <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+                    Built from scratch.
+                    <br />
+                    <span className="font-serif text-champagne italic">Measured by results.</span>
+                  </h2>
+                </Reveal>
               </div>
-              <Reveal delay={160}>
-                <p className="mt-8 font-serif text-2xl text-foreground">
-                  Just execution, data and improvement.
-                </p>
-              </Reveal>
-              <Reveal delay={220}>
-                <a
-                  href="https://instagram.com/KovaScales"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 text-sm text-champagne transition-opacity hover:opacity-75"
-                >
-                  Follow the journey → @KovaScales
-                </a>
-              </Reveal>
+              <div>
+                <Reveal delay={120}>
+                  <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    KOVA is being built around a simple idea: local service businesses shouldn&apos;t
+                    have to rely entirely on referrals, inconsistent lead sources, or hope to keep
+                    their pipeline full.
+                  </p>
+                </Reveal>
+                <Reveal delay={180}>
+                  <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    The goal is to build customer acquisition systems around real businesses, measure
+                    what actually produces opportunities, and improve from real-world data.
+                  </p>
+                </Reveal>
+              </div>
             </div>
+
+            <div className="relative mt-16 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-3">
+              {[
+                "No inflated case studies.",
+                "No borrowed results.",
+                "No pretending.",
+              ].map((t, i) => (
+                <Reveal key={t} delay={i * 90} className="bg-background">
+                  <div className="flex h-full items-center justify-center bg-background p-8 sm:p-10">
+                    <p className="text-center font-serif text-xl text-foreground sm:text-2xl">
+                      {t}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal delay={200}>
+              <div className="relative mt-16 overflow-hidden rounded-sm border border-border bg-surface/40">
+                <div className="grid md:grid-cols-2">
+                  <div className="p-8 sm:p-12">
+                    <p className="label-xs text-champagne/70">System in progress</p>
+                    <p className="mt-4 font-serif text-2xl text-foreground sm:text-3xl">
+                      Just execution, data and improvement.
+                    </p>
+                  </div>
+                  <div className="border-t border-border p-8 sm:p-12 md:border-t-0 md:border-l">
+                    <div className="flex items-center gap-4">
+                      <div className="h-px flex-1 bg-champagne/20">
+                        <div className="h-px w-1/3 bg-champagne" />
+                      </div>
+                      <span className="text-xs uppercase tracking-wider text-muted-foreground">
+                        Building
+                      </span>
+                    </div>
+                    <div className="mt-8 grid grid-cols-3 gap-4 text-xs text-muted-foreground">
+                      <div>
+                        <span className="block text-lg font-medium text-foreground">—</span>
+                        <span className="mt-1 block">Opportunities</span>
+                      </div>
+                      <div>
+                        <span className="block text-lg font-medium text-foreground">—</span>
+                        <span className="mt-1 block">Cost per lead</span>
+                      </div>
+                      <div>
+                        <span className="block text-lg font-medium text-foreground">—</span>
+                        <span className="mt-1 block">Close rate</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </section>
 
-        {/* ABOUT */}
-        <section id="about" className="scroll-mt-24 border-t border-border bg-surface/40 px-5 py-20 sm:px-8 sm:py-32">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-20">
-            <div>
-              <Reveal>
-                <SectionLabel>05 — Behind KOVA</SectionLabel>
-              </Reveal>
-              <Reveal delay={80}>
-                <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
-                  Built by <span className="font-serif text-champagne italic">Brayden.</span>
-                </h2>
-              </Reveal>
-              <Reveal delay={140}>
-                <div className="mt-10 flex aspect-4/5 max-w-sm items-end rounded-sm border border-border bg-[oklch(0.115_0_0)] p-6">
-                  <p className="text-xs text-muted-foreground/70">Founder portrait — coming soon</p>
+        {/* THE MOTIVE */}
+        <section
+          id="why-kova"
+          className="scroll-mt-24 border-t border-border bg-surface/40 px-5 py-20 sm:px-8 sm:py-32"
+        >
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+              <div>
+                <Reveal>
+                  <SectionLabel>05 — WHY KOVA</SectionLabel>
+                </Reveal>
+                <Reveal delay={80}>
+                  <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+                    Building the proof,
+                    <br />
+                    <span className="font-serif text-champagne italic">
+                      not pretending it already exists.
+                    </span>
+                  </h2>
+                </Reveal>
+              </div>
+              <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg lg:pt-20">
+                <Reveal delay={120}>
+                  <p>KOVA is being documented from the beginning.</p>
+                </Reveal>
+                <Reveal delay={180}>
+                  <p>
+                    The campaigns, lessons, wins, mistakes and growth behind the company are being
+                    built in real time — with the goal of creating something backed by actual results
+                    rather than marketing claims.
+                  </p>
+                </Reveal>
+                <Reveal delay={240}>
+                  <p className="text-foreground">
+                    This isn&apos;t about looking bigger than we are.
+                  </p>
+                </Reveal>
+                <Reveal delay={300}>
+                  <p>
+                    It&apos;s about becoming better at what we do, proving it through client
+                    outcomes, and building KOVA into something worth following.
+                  </p>
+                </Reveal>
+              </div>
+            </div>
+
+            <Reveal delay={200}>
+              <div className="relative mt-20 overflow-hidden rounded-sm border border-border bg-background">
+                <div className="absolute inset-0 hairline-grid opacity-20" />
+                <div className="relative grid gap-px bg-border md:grid-cols-2">
+                  <div className="bg-background p-8 sm:p-12">
+                    <p className="label-xs text-champagne/70">The company</p>
+                    <p className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+                      KOVA
+                    </p>
+                    <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+                      Customer acquisition for local service businesses.
+                    </p>
+                  </div>
+                  <div className="bg-background p-8 sm:p-12">
+                    <p className="label-xs text-champagne/70">The journey</p>
+                    <p className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+                      KovaScales
+                    </p>
+                    <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+                      The process behind building KOVA from zero.
+                    </p>
+                  </div>
                 </div>
-              </Reveal>
-            </div>
-            <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg lg:pt-24">
-              <Reveal delay={100}>
-                <p className="text-foreground">I&rsquo;m Brayden, the person behind KOVA.</p>
-              </Reveal>
-              <Reveal delay={160}>
-                <p>
-                  I&rsquo;m building KOVA around customer acquisition for local service businesses
-                  — starting with landscaping, hardscaping and tree-service companies.
+              </div>
+            </Reveal>
+
+            <Reveal delay={280}>
+              <div className="mt-12 flex flex-col items-start gap-6 border-t border-border pt-12 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="label-xs text-champagne/70">FOLLOW THE BUILD</p>
+                  <a
+                    href="https://instagram.com/KovaScales"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-flex items-center gap-2 text-2xl font-medium tracking-tight text-foreground transition-opacity hover:opacity-75"
+                  >
+                    @KovaScales <span className="text-champagne">→</span>
+                  </a>
+                </div>
+                <p className="max-w-sm text-sm text-muted-foreground">
+                  KovaScales documents the lessons, experiments and growth behind KOVA in real time.
                 </p>
-              </Reveal>
-              <Reveal delay={220}>
-                <p>
-                  I&rsquo;m documenting the process publicly through KovaScales while building the
-                  systems, experience and track record behind the company.
-                </p>
-              </Reveal>
-              <Reveal delay={280}>
-                <a
-                  href="https://instagram.com/KovaScales"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 border-b border-champagne/40 pb-1 text-sm text-champagne transition-colors hover:border-champagne"
-                >
-                  Instagram → @KovaScales
-                </a>
-              </Reveal>
-            </div>
+              </div>
+            </Reveal>
           </div>
         </section>
 
