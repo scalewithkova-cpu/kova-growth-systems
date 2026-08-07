@@ -24,5 +24,5 @@ export default defineConfig({
         }
       : {}),
   },
-  ...(isGitHubPages ? { nitro: { preset: "static" } } : {}),
+  ...(isGitHubPages ? { nitro: false } : {}),
 });
