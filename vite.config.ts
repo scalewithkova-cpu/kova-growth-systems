@@ -18,7 +18,6 @@ export default defineConfig({
     ...(isGitHubPages ? {} : { server: { entry: "server" } }),
     ...(isGitHubPages
       ? {
-          spa: { enabled: true },
           prerender: { enabled: true, crawlLinks: true },
           pages: [{ path: "/" }, { path: "/privacy" }],
         }
