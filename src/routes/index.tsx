@@ -269,51 +269,90 @@ function Index() {
 
         {/* BUILDING KOVA */}
         <section className="border-t border-border px-5 py-20 sm:px-8 sm:py-32">
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <Reveal>
-                <SectionLabel>04 — Building KOVA</SectionLabel>
-              </Reveal>
-              <Reveal delay={80}>
-                <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
-                  Built publicly.
-                  <br />
-                  <span className="font-serif text-champagne italic">Measured by results.</span>
-                </h2>
-              </Reveal>
-            </div>
-            <div>
-              <Reveal delay={120}>
-                <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  KOVA is being built from the ground up around a simple principle: prove the
-                  system through real businesses, real campaigns and real outcomes.
-                </p>
-              </Reveal>
-              <div className="mt-10 border-t border-border">
-                {["No inflated case studies.", "No fake screenshots.", "No borrowed results."].map(
-                  (t, i) => (
-                    <Reveal key={t} delay={i * 80}>
-                      <p className="border-b border-border py-4 text-foreground/90">{t}</p>
-                    </Reveal>
-                  ),
-                )}
+          <div className="relative mx-auto max-w-7xl">
+            <div className="hairline-grid pointer-events-none absolute inset-0 opacity-40" />
+            <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-20">
+              <div>
+                <Reveal>
+                  <SectionLabel>04 — BUILDING KOVA</SectionLabel>
+                </Reveal>
+                <Reveal delay={80}>
+                  <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+                    Built from scratch.
+                    <br />
+                    <span className="font-serif text-champagne italic">Measured by results.</span>
+                  </h2>
+                </Reveal>
               </div>
-              <Reveal delay={160}>
-                <p className="mt-8 font-serif text-2xl text-foreground">
-                  Just execution, data and improvement.
-                </p>
-              </Reveal>
-              <Reveal delay={220}>
-                <a
-                  href="https://instagram.com/KovaScales"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 text-sm text-champagne transition-opacity hover:opacity-75"
-                >
-                  Follow the journey → @KovaScales
-                </a>
-              </Reveal>
+              <div>
+                <Reveal delay={120}>
+                  <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    KOVA is being built around a simple idea: local service businesses shouldn&apos;t
+                    have to rely entirely on referrals, inconsistent lead sources, or hope to keep
+                    their pipeline full.
+                  </p>
+                </Reveal>
+                <Reveal delay={180}>
+                  <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    The goal is to build customer acquisition systems around real businesses, measure
+                    what actually produces opportunities, and improve from real-world data.
+                  </p>
+                </Reveal>
+              </div>
             </div>
+
+            <div className="relative mt-16 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-3">
+              {[
+                "No inflated case studies.",
+                "No borrowed results.",
+                "No pretending.",
+              ].map((t, i) => (
+                <Reveal key={t} delay={i * 90} className="bg-background">
+                  <div className="flex h-full items-center justify-center bg-background p-8 sm:p-10">
+                    <p className="text-center font-serif text-xl text-foreground sm:text-2xl">
+                      {t}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal delay={200}>
+              <div className="relative mt-16 overflow-hidden rounded-sm border border-border bg-surface/40">
+                <div className="grid md:grid-cols-2">
+                  <div className="p-8 sm:p-12">
+                    <p className="label-xs text-champagne/70">System in progress</p>
+                    <p className="mt-4 font-serif text-2xl text-foreground sm:text-3xl">
+                      Just execution, data and improvement.
+                    </p>
+                  </div>
+                  <div className="border-t border-border p-8 sm:p-12 md:border-t-0 md:border-l">
+                    <div className="flex items-center gap-4">
+                      <div className="h-px flex-1 bg-champagne/20">
+                        <div className="h-px w-1/3 bg-champagne" />
+                      </div>
+                      <span className="text-xs uppercase tracking-wider text-muted-foreground">
+                        Building
+                      </span>
+                    </div>
+                    <div className="mt-8 grid grid-cols-3 gap-4 text-xs text-muted-foreground">
+                      <div>
+                        <span className="block text-lg font-medium text-foreground">—</span>
+                        <span className="mt-1 block">Opportunities</span>
+                      </div>
+                      <div>
+                        <span className="block text-lg font-medium text-foreground">—</span>
+                        <span className="mt-1 block">Cost per lead</span>
+                      </div>
+                      <div>
+                        <span className="block text-lg font-medium text-foreground">—</span>
+                        <span className="mt-1 block">Close rate</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </section>
 
