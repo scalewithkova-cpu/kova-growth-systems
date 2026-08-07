@@ -5,7 +5,7 @@ import wordmark from "@/assets/kova-wordmark.png.asset.json";
 const links = [
   { href: "#how-it-works", label: "How It Works" },
   { href: "#who-we-help", label: "Who We Help" },
-  { href: "#about", label: "About" },
+  { href: "#why-kova", label: "Why KOVA" },
   { href: "#contact", label: "Contact" },
 ];
 
