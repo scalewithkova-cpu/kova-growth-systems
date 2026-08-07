@@ -13,8 +13,9 @@ const isGitHubPages = process.env["GITHUB_PAGES"] === "true";
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+    // nitro/vite builds from this. The static (GitHub Pages) build uses the default entry so the
+    // prerender step can boot the bundled server.
+    ...(isGitHubPages ? {} : { server: { entry: "server" } }),
     ...(isGitHubPages
       ? {
           spa: { enabled: true },
