@@ -30,8 +30,9 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "KOVA",
-          alternateName: "Scale With Kova",
+          name: "ScaleWithKova",
+          alternateName: "KOVA",
+
           description: DESC,
           url: "/",
           sameAs: ["https://instagram.com/KovaScales"],
@@ -90,45 +91,46 @@ function Index() {
         <section className="relative overflow-hidden px-5 pt-32 pb-20 sm:px-8 sm:pt-44 sm:pb-32">
           <div className="hairline-grid pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_at_50%_0%,black,transparent_70%)]" />
           <div className="relative mx-auto max-w-7xl">
-            <Reveal>
+            <HeroIn>
               <SectionLabel>Client acquisition for local service businesses</SectionLabel>
-            </Reveal>
-            <Reveal delay={80}>
+            </HeroIn>
+            <HeroIn delay={90}>
               <h1 className="mt-8 max-w-4xl text-[2.6rem] leading-[1.04] font-medium tracking-[-0.03em] text-balance sm:text-6xl lg:text-7xl">
                 More qualified opportunities.
                 <br />
-                <span className="font-serif text-champagne italic">More jobs.</span>
+                <span className="glow-hover font-serif text-champagne italic">More jobs.</span>
                 <br />
                 More room to scale.
               </h1>
-            </Reveal>
-            <Reveal delay={160}>
+            </HeroIn>
+            <HeroIn delay={180}>
               <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                KOVA helps local service businesses build predictable customer acquisition
+                ScaleWithKova helps local service businesses build predictable customer acquisition
                 systems designed to turn advertising into real booked opportunities.
               </p>
-            </Reveal>
-            <Reveal delay={240}>
+            </HeroIn>
+            <HeroIn delay={270}>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
                 <a
                   href="#contact"
-                  className="rounded-full bg-champagne px-8 py-4 text-center text-base font-medium text-primary-foreground transition-opacity duration-300 hover:opacity-90"
+                  className="btn-lift rounded-full bg-champagne px-8 py-4 text-center text-base font-medium text-primary-foreground hover:opacity-95"
                 >
-                  Work With Kova →
+                  Work With Us <span className="btn-arrow">→</span>
                 </a>
                 <a
                   href="#how-it-works"
-                  className="rounded-full border border-border px-8 py-4 text-center text-base text-foreground transition-colors duration-300 hover:border-champagne/50 hover:text-champagne"
+                  className="btn-lift rounded-full border border-border px-8 py-4 text-center text-base text-foreground hover:border-champagne/50 hover:text-champagne"
                 >
                   See How It Works
                 </a>
               </div>
-            </Reveal>
-            <Reveal delay={320}>
+            </HeroIn>
+            <HeroIn delay={360}>
               <p className="mt-10 border-t border-border pt-6 text-sm text-muted-foreground">
                 Built for landscapers, hardscapers, arborists &amp; high-ticket local services.
               </p>
-            </Reveal>
+            </HeroIn>
+
           </div>
         </section>
 
@@ -168,10 +170,11 @@ function Index() {
                 ))}
                 <Reveal delay={120}>
                   <p className="pt-8 font-serif text-2xl leading-snug text-foreground text-balance sm:text-3xl">
-                    KOVA builds the acquisition infrastructure designed to make growth{" "}
-                    <span className="text-champagne italic">more predictable.</span>
+                    ScaleWithKova builds the acquisition infrastructure designed to make growth{" "}
+                    <span className="glow-hover text-champagne italic">more predictable.</span>
                   </p>
                 </Reveal>
+
               </div>
             </div>
           </div>
@@ -192,7 +195,7 @@ function Index() {
             <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-3">
               {segments.map((s, i) => (
                 <Reveal key={s.title} delay={i * 90} className="bg-background">
-                  <article className="group relative h-full bg-background p-8 transition-colors duration-500 hover:bg-surface sm:p-10">
+                  <article className="group card-lift relative h-full border border-transparent bg-background p-8 hover:bg-surface sm:p-10">
                     <div className="hairline-grid pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
                     <div className="relative">
                       <span className="font-serif text-5xl text-champagne/25 transition-colors duration-500 group-hover:text-champagne/50">
