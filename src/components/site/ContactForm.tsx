@@ -92,11 +92,12 @@ export function ContactForm() {
       <div className="sm:col-span-2">
         <button
           type="submit"
-          className="w-full rounded-full bg-champagne px-8 py-4 text-base font-medium text-primary-foreground transition-opacity duration-300 hover:opacity-90 sm:w-auto"
+          className="btn-lift w-full rounded-full bg-champagne px-8 py-4 text-base font-medium text-primary-foreground hover:opacity-95 sm:w-auto"
         >
-          Let&rsquo;s Talk →
+          Let&rsquo;s Talk <span className="btn-arrow">→</span>
         </button>
       </div>
+
     </form>
   );
 }

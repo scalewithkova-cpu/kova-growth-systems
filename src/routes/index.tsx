@@ -470,7 +470,7 @@ function Index() {
               </Reveal>
               <Reveal delay={80}>
                 <h2 className="mx-auto mt-6 max-w-3xl text-3xl leading-[1.08] font-medium tracking-[-0.02em] text-balance sm:text-5xl">
-                  Let&rsquo;s see if KOVA makes sense for your business.
+                  Let&rsquo;s see if ScaleWithKova makes sense for your business.
                 </h2>
               </Reveal>
               <Reveal delay={140}>
@@ -500,8 +500,14 @@ function Index() {
       <footer className="border-t border-border px-5 py-14 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-[minmax(0,1fr)_auto]">
           <div>
-            <img src={withBase(wordmark.url)} alt="KOVA" width={800} height={226} className="h-5 w-auto" />
-            <p className="mt-5 text-sm text-foreground/80">Scale With Kova</p>
+            <img
+              src={withBase(wordmark.url)}
+              alt="ScaleWithKova"
+              width={800}
+              height={226}
+              className="h-5 w-auto"
+            />
+            <p className="mt-5 text-sm text-foreground/80">ScaleWithKova</p>
             <p className="mt-2 max-w-xs text-sm text-muted-foreground">
               Customer acquisition for ambitious local service businesses.
             </p>
@@ -511,21 +517,22 @@ function Index() {
               href="https://instagram.com/KovaScales"
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-champagne"
+              className="nav-link hover:text-champagne"
             >
               Instagram
             </a>
-            <a href="#contact" className="transition-colors hover:text-champagne">
+            <a href="#contact" className="nav-link hover:text-champagne">
               Contact
             </a>
-            <a href="/privacy" className="transition-colors hover:text-champagne">
+            <a href="/privacy" className="nav-link hover:text-champagne">
               Privacy
             </a>
           </nav>
         </div>
         <div className="mx-auto mt-12 max-w-7xl border-t border-border pt-6">
-          <p className="text-xs text-muted-foreground">© 2026 KOVA. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© 2026 ScaleWithKova. All rights reserved.</p>
         </div>
+
       </footer>
     </div>
   );
