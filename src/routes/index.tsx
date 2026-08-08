@@ -490,7 +490,7 @@ function Index() {
       <footer className="border-t border-border px-5 py-14 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-[minmax(0,1fr)_auto]">
           <div>
-            <img src={wordmark.url} alt="KOVA" width={800} height={226} className="h-5 w-auto" />
+            <img src={withBase(wordmark.url)} alt="KOVA" width={800} height={226} className="h-5 w-auto" />
             <p className="mt-5 text-sm text-foreground/80">Scale With Kova</p>
             <p className="mt-2 max-w-xs text-sm text-muted-foreground">
               Customer acquisition for ambitious local service businesses.

@@ -43,7 +43,7 @@ export function SiteNav() {
       >
         <a href="#top" className="flex min-w-0 items-center" aria-label="KOVA home">
           <img
-            src={wordmark.url}
+            src={withBase(wordmark.url)}
             alt="KOVA"
             width={800}
             height={226}
