@@ -12,10 +12,10 @@ export const Route = createFileRoute("/privacy")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/privacy" },
+      { property: "og:url", content: withBase("/privacy") },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/privacy" }],
+    links: [{ rel: "canonical", href: withBase("/privacy") }],
   }),
   component: Privacy,
 });
