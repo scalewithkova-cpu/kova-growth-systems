@@ -2,9 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { withBase } from "@/lib/base-url";
 
 
-const TITLE = "Privacy — KOVA";
+const TITLE = "Privacy — ScaleWithKova";
 const DESC =
-  "How KOVA collects, uses and protects information submitted through scalewithkova.com.";
+  "How ScaleWithKova collects, uses and protects information submitted through scalewithkova.com.";
+
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
