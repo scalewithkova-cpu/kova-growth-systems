@@ -225,25 +225,26 @@ function Index() {
             <Reveal delay={80}>
               <h2 className="mt-6 max-w-2xl text-3xl leading-[1.1] font-medium tracking-[-0.02em] text-balance sm:text-4xl lg:text-5xl">
                 A simple system built around one thing:{" "}
-                <span className="font-serif text-champagne italic">creating opportunities.</span>
+                <span className="glow-hover font-serif text-champagne italic">creating opportunities.</span>
               </h2>
             </Reveal>
 
             <div className="relative mt-16">
-              <div className="absolute top-2 left-2 hidden h-px w-full bg-border md:block" />
+              <LineReveal className="absolute top-2 left-2 hidden h-px w-full bg-border md:block" />
               <div className="absolute top-2 left-2 h-full w-px bg-border md:hidden" />
               <div className="grid gap-10 md:grid-cols-4 md:gap-8">
                 {steps.map((s, i) => (
                   <Reveal key={s.n} delay={i * 90}>
-                    <div className="relative pl-10 md:pl-0">
-                      <span className="absolute top-0 left-0 size-4 translate-x-[2px] rounded-full border border-champagne/60 bg-background md:relative md:block" />
-                      <p className="mt-0 text-xs text-champagne md:mt-8">{s.n}</p>
-                      <h3 className="mt-2 text-lg font-medium tracking-[0.06em] uppercase">
+                    <div className="group relative pl-10 md:pl-0">
+                      <span className="absolute top-0 left-0 size-4 translate-x-[2px] rounded-full border border-champagne/60 bg-background transition-colors duration-300 group-hover:border-champagne group-hover:bg-champagne/10 md:relative md:block" />
+                      <p className="glow-hover mt-0 text-xs text-champagne md:mt-8">{s.n}</p>
+                      <h3 className="mt-2 text-lg font-medium tracking-[0.06em] uppercase transition-colors duration-300 group-hover:text-champagne">
                         {s.t}
                       </h3>
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.c}</p>
                     </div>
                   </Reveal>
+
                 ))}
               </div>
             </div>
@@ -262,7 +263,7 @@ function Index() {
               <p className="mt-10 text-2xl leading-tight text-muted-foreground sm:text-4xl">
                 Clicks don&rsquo;t pay contractors.
                 <br />
-                <span className="font-serif text-champagne italic">Jobs do.</span>
+                <span className="glow-hover font-serif text-champagne italic">Jobs do.</span>
               </p>
             </Reveal>
             <Reveal delay={200}>
@@ -281,20 +282,21 @@ function Index() {
             <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-20">
               <div>
                 <Reveal>
-                  <SectionLabel>04 — BUILDING KOVA</SectionLabel>
+                  <SectionLabel>04 — BUILDING SCALEWITHKOVA</SectionLabel>
                 </Reveal>
                 <Reveal delay={80}>
                   <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
                     Built from scratch.
                     <br />
-                    <span className="font-serif text-champagne italic">Measured by results.</span>
+                    <span className="glow-hover font-serif text-champagne italic">Measured by results.</span>
                   </h2>
                 </Reveal>
               </div>
               <div>
                 <Reveal delay={120}>
                   <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    KOVA is being built around a simple idea: local service businesses shouldn&apos;t
+                    ScaleWithKova is being built around a simple idea: local service businesses shouldn&apos;t
+
                     have to rely entirely on referrals, inconsistent lead sources, or hope to keep
                     their pipeline full.
                   </p>
@@ -315,11 +317,12 @@ function Index() {
                 "No pretending.",
               ].map((t, i) => (
                 <Reveal key={t} delay={i * 90} className="bg-background">
-                  <div className="flex h-full items-center justify-center bg-background p-8 sm:p-10">
+                  <div className="card-lift flex h-full items-center justify-center border border-transparent bg-background p-8 hover:bg-surface/60 sm:p-10">
                     <p className="text-center font-serif text-xl text-foreground sm:text-2xl">
                       {t}
                     </p>
                   </div>
+
                 </Reveal>
               ))}
             </div>
