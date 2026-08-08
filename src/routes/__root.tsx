@@ -79,13 +79,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "KOVA | Customer Acquisition for Local Service Businesses" },
+      { title: "ScaleWithKova | Customer Acquisition for Local Service Businesses" },
       {
         name: "description",
         content:
-          "KOVA helps landscapers, hardscapers, arborists and local service businesses build customer acquisition systems designed to generate qualified opportunities.",
+          "ScaleWithKova helps landscapers, hardscapers, arborists and local service businesses build customer acquisition systems designed to generate qualified opportunities.",
       },
-      { property: "og:site_name", content: "KOVA" },
+      { property: "og:site_name", content: "ScaleWithKova" },
+
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#080808" },

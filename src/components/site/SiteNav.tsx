@@ -7,9 +7,10 @@ import { withBase } from "@/lib/base-url";
 const links = [
   { href: "#how-it-works", label: "How It Works" },
   { href: "#who-we-help", label: "Who We Help" },
-  { href: "#why-kova", label: "Why KOVA" },
+  { href: "#why-kova", label: "Why ScaleWithKova" },
   { href: "#contact", label: "Contact" },
 ];
+
 
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,13 +42,13 @@ export function SiteNav() {
         aria-label="Primary"
         className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-5 sm:h-20 sm:px-8"
       >
-        <a href="#top" className="flex min-w-0 items-center" aria-label="KOVA home">
+        <a href="#top" className="flex min-w-0 items-center" aria-label="ScaleWithKova home">
           <img
             src={withBase(wordmark.url)}
-            alt="KOVA"
+            alt="ScaleWithKova"
             width={800}
             height={226}
-            className="h-5 w-auto sm:h-6"
+            className="h-5 w-auto transition-opacity duration-300 hover:opacity-80 sm:h-6"
           />
         </a>
 
@@ -56,18 +57,19 @@ export function SiteNav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="nav-link text-sm text-muted-foreground hover:text-foreground"
             >
               {l.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full border border-champagne/40 px-5 py-2 text-sm text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground"
+            className="btn-lift rounded-full border border-champagne/40 px-5 py-2 text-sm text-champagne hover:bg-champagne hover:text-primary-foreground"
           >
-            Work With Kova
+            Work With Us
           </a>
         </div>
+
 
         <button
           type="button"
@@ -96,10 +98,11 @@ export function SiteNav() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-6 rounded-full bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
+              className="btn-lift mt-6 rounded-full bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
             >
-              Work With Kova →
+              Work With Us <span className="btn-arrow">→</span>
             </a>
+
           </div>
         </div>
       )}
