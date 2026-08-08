@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
+import { withBase } from "@/lib/base-url";
+
 
 const links = [
   { href: "#how-it-works", label: "How It Works" },

@@ -3,6 +3,8 @@ import { SiteNav } from "@/components/site/SiteNav";
 import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal, SectionLabel } from "@/components/site/Reveal";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
+import { withBase } from "@/lib/base-url";
+
 
 const TITLE = "KOVA | Customer Acquisition for Local Service Businesses";
 const DESC =
