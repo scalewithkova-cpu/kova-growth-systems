@@ -1,14 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { ContactForm } from "@/components/site/ContactForm";
-import { Reveal, SectionLabel } from "@/components/site/Reveal";
+import { Reveal, HeroIn, LineReveal, SectionLabel } from "@/components/site/Reveal";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
 import { withBase } from "@/lib/base-url";
 
 
-const TITLE = "KOVA | Customer Acquisition for Local Service Businesses";
+const TITLE = "ScaleWithKova | Customer Acquisition for Local Service Businesses";
 const DESC =
-  "KOVA helps landscapers, hardscapers, arborists and local service businesses build customer acquisition systems designed to generate qualified opportunities.";
+  "ScaleWithKova helps landscapers, hardscapers, arborists and local service businesses build customer acquisition systems designed to generate qualified opportunities.";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
