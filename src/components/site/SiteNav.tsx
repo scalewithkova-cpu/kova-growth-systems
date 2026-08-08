@@ -98,10 +98,11 @@ export function SiteNav() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-6 rounded-full bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
+              className="btn-lift mt-6 rounded-full bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
             >
-              Work With Kova →
+              Work With Us <span className="btn-arrow">→</span>
             </a>
+
           </div>
         </div>
       )}
