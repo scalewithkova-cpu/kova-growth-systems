@@ -375,13 +375,13 @@ function Index() {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
               <div>
                 <Reveal>
-                  <SectionLabel>05 — WHY KOVA</SectionLabel>
+                  <SectionLabel>05 — WHY SCALEWITHKOVA</SectionLabel>
                 </Reveal>
                 <Reveal delay={80}>
                   <h2 className="mt-6 text-3xl leading-[1.1] font-medium tracking-[-0.02em] sm:text-4xl lg:text-5xl">
                     Building the proof,
                     <br />
-                    <span className="font-serif text-champagne italic">
+                    <span className="glow-hover font-serif text-champagne italic">
                       not pretending it already exists.
                     </span>
                   </h2>
@@ -389,7 +389,7 @@ function Index() {
               </div>
               <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg lg:pt-20">
                 <Reveal delay={120}>
-                  <p>KOVA is being documented from the beginning.</p>
+                  <p>ScaleWithKova is being documented from the beginning.</p>
                 </Reveal>
                 <Reveal delay={180}>
                   <p>
@@ -406,7 +406,7 @@ function Index() {
                 <Reveal delay={300}>
                   <p>
                     It&apos;s about becoming better at what we do, proving it through client
-                    outcomes, and building KOVA into something worth following.
+                    outcomes, and building it into something worth following.
                   </p>
                 </Reveal>
               </div>
@@ -416,22 +416,22 @@ function Index() {
               <div className="relative mt-20 overflow-hidden rounded-sm border border-border bg-background">
                 <div className="absolute inset-0 hairline-grid opacity-20" />
                 <div className="relative grid gap-px bg-border md:grid-cols-2">
-                  <div className="bg-background p-8 sm:p-12">
+                  <div className="card-lift border border-transparent bg-background p-8 sm:p-12">
                     <p className="label-xs text-champagne/70">The company</p>
                     <p className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
-                      KOVA
+                      ScaleWithKova
                     </p>
                     <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-                      Customer acquisition for local service businesses.
+                      Customer acquisition for local service businesses. KOVA is the wordmark.
                     </p>
                   </div>
-                  <div className="bg-background p-8 sm:p-12">
+                  <div className="card-lift border border-transparent bg-background p-8 sm:p-12">
                     <p className="label-xs text-champagne/70">The journey</p>
                     <p className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
                       KovaScales
                     </p>
                     <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-                      The process behind building KOVA from zero.
+                      The founder&rsquo;s account documenting the build from zero.
                     </p>
                   </div>
                 </div>
@@ -446,14 +446,16 @@ function Index() {
                     href="https://instagram.com/KovaScales"
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-2 inline-flex items-center gap-2 text-2xl font-medium tracking-tight text-foreground transition-opacity hover:opacity-75"
+                    className="btn-lift mt-2 inline-flex items-center gap-2 text-2xl font-medium tracking-tight text-foreground hover:text-champagne"
                   >
-                    @KovaScales <span className="text-champagne">→</span>
+                    @KovaScales <span className="btn-arrow text-champagne">→</span>
                   </a>
                 </div>
                 <p className="max-w-sm text-sm text-muted-foreground">
-                  KovaScales documents the lessons, experiments and growth behind KOVA in real time.
+                  KovaScales documents the lessons, experiments and growth behind ScaleWithKova in
+                  real time.
                 </p>
+
               </div>
             </Reveal>
           </div>
