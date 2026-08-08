@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
+import { withBase } from "@/lib/base-url";
+
 
 const links = [
   { href: "#how-it-works", label: "How It Works" },
@@ -41,7 +43,7 @@ export function SiteNav() {
       >
         <a href="#top" className="flex min-w-0 items-center" aria-label="KOVA home">
           <img
-            src={wordmark.url}
+            src={withBase(wordmark.url)}
             alt="KOVA"
             width={800}
             height={226}

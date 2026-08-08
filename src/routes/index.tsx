@@ -3,6 +3,8 @@ import { SiteNav } from "@/components/site/SiteNav";
 import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal, SectionLabel } from "@/components/site/Reveal";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
+import { withBase } from "@/lib/base-url";
+
 
 const TITLE = "KOVA | Customer Acquisition for Local Service Businesses";
 const DESC =
@@ -16,10 +18,11 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: withBase("/") },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: withBase("/") }],
+
     scripts: [
       {
         type: "application/ld+json",
@@ -488,7 +491,7 @@ function Index() {
       <footer className="border-t border-border px-5 py-14 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-[minmax(0,1fr)_auto]">
           <div>
-            <img src={wordmark.url} alt="KOVA" width={800} height={226} className="h-5 w-auto" />
+            <img src={withBase(wordmark.url)} alt="KOVA" width={800} height={226} className="h-5 w-auto" />
             <p className="mt-5 text-sm text-foreground/80">Scale With Kova</p>
             <p className="mt-2 max-w-xs text-sm text-muted-foreground">
               Customer acquisition for ambitious local service businesses.
