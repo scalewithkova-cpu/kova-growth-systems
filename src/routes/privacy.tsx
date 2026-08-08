@@ -30,22 +30,23 @@ function Privacy() {
       <h1 className="mt-6 text-4xl font-medium tracking-[-0.02em] sm:text-5xl">Privacy Policy</h1>
       <div className="mt-10 space-y-6 text-muted-foreground">
         <p>
-          KOVA collects only the information you choose to submit through the contact form: your
-          name, company, phone, email, website or social profile, service type, service area and
+          ScaleWithKova collects only the information you choose to submit through the contact form:
+          your name, company, phone, email, website or social profile, service type, service area and
           the notes you provide.
         </p>
         <p>
-          That information is used solely to respond to your inquiry and evaluate whether KOVA is a
-          fit for your business. We do not sell or rent your information.
+          That information is used solely to respond to your inquiry and evaluate whether
+          ScaleWithKova is a fit for your business. We do not sell or rent your information.
         </p>
         <p>
           If you&rsquo;d like your information removed, reach out through the contact form and
           we&rsquo;ll delete it.
         </p>
       </div>
-      <Link to="/" className="mt-12 inline-block text-sm text-champagne hover:opacity-75">
-        ← Back to KOVA
+      <Link to="/" className="mt-12 inline-block text-sm text-champagne glow-hover hover:opacity-90">
+        ← Back to ScaleWithKova
       </Link>
+
     </main>
   );
 }
