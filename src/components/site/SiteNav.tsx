@@ -41,13 +41,13 @@ export function SiteNav() {
         aria-label="Primary"
         className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-5 sm:h-20 sm:px-8"
       >
-        <a href="#top" className="flex min-w-0 items-center" aria-label="KOVA home">
+        <a href="#top" className="flex min-w-0 items-center" aria-label="ScaleWithKova home">
           <img
             src={withBase(wordmark.url)}
-            alt="KOVA"
+            alt="ScaleWithKova"
             width={800}
             height={226}
-            className="h-5 w-auto sm:h-6"
+            className="h-5 w-auto transition-opacity duration-300 hover:opacity-80 sm:h-6"
           />
         </a>
 
@@ -56,18 +56,19 @@ export function SiteNav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="nav-link text-sm text-muted-foreground hover:text-foreground"
             >
               {l.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full border border-champagne/40 px-5 py-2 text-sm text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground"
+            className="btn-lift rounded-full border border-champagne/40 px-5 py-2 text-sm text-champagne hover:bg-champagne hover:text-primary-foreground"
           >
-            Work With Kova
+            Work With Us
           </a>
         </div>
+
 
         <button
           type="button"
