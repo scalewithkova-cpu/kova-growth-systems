@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { withBase } from "@/lib/base-url";
+
 
 const TITLE = "Privacy — KOVA";
 const DESC =
