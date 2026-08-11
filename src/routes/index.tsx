@@ -4,6 +4,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal, HeroIn, LineReveal, SectionLabel } from "@/components/site/Reveal";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
 import { withBase } from "@/lib/base-url";
+import { CALENDLY_URL, openCalendly, prefetchCalendly } from "@/lib/calendly";
 
 
 const TITLE = "ScaleWithKova | Customer Acquisition for Local Service Businesses";
@@ -112,10 +113,12 @@ function Index() {
             <HeroIn delay={270}>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
                 <a
-                  href="#contact"
+                  href={CALENDLY_URL}
+                  onClick={openCalendly}
+                  onMouseEnter={prefetchCalendly}
                   className="btn-lift rounded-full bg-champagne px-8 py-4 text-center text-base font-medium text-primary-foreground hover:opacity-95"
                 >
-                  Work With Us <span className="btn-arrow">→</span>
+                  Book a Call <span className="btn-arrow">→</span>
                 </a>
                 <a
                   href="#how-it-works"
@@ -479,8 +482,20 @@ function Index() {
                   projects, let&rsquo;s talk.
                 </p>
               </Reveal>
+              <Reveal delay={180}>
+                <div className="mt-10 flex justify-center">
+                  <a
+                    href={CALENDLY_URL}
+                    onClick={openCalendly}
+                    onMouseEnter={prefetchCalendly}
+                    className="btn-lift rounded-full bg-champagne px-8 py-4 text-center text-base font-medium text-primary-foreground hover:opacity-95"
+                  >
+                    Book a Call <span className="btn-arrow">→</span>
+                  </a>
+                </div>
+              </Reveal>
               <Reveal delay={200}>
-                <p className="mx-auto mt-10 max-w-md text-sm text-muted-foreground/80">
+                <p className="mx-auto mt-8 max-w-md text-sm text-muted-foreground/80">
                   No pressure. Just a conversation about your business and whether we can actually
                   help.
                 </p>

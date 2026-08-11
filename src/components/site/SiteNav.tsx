@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import wordmark from "@/assets/kova-wordmark.png.asset.json";
 import { withBase } from "@/lib/base-url";
+import { CALENDLY_URL, openCalendly, prefetchCalendly } from "@/lib/calendly";
 
 
 const links = [
@@ -63,10 +64,12 @@ export function SiteNav() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={CALENDLY_URL}
+            onClick={openCalendly}
+            onMouseEnter={prefetchCalendly}
             className="btn-lift rounded-full border border-champagne/40 px-5 py-2 text-sm text-champagne hover:bg-champagne hover:text-primary-foreground"
           >
-            Work With Us
+            Book a Call
           </a>
         </div>
 
@@ -96,11 +99,14 @@ export function SiteNav() {
               </a>
             ))}
             <a
-              href="#contact"
-              onClick={() => setOpen(false)}
+              href={CALENDLY_URL}
+              onClick={(e) => {
+                setOpen(false);
+                openCalendly(e);
+              }}
               className="btn-lift mt-6 rounded-full bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
             >
-              Work With Us <span className="btn-arrow">→</span>
+              Book a Call <span className="btn-arrow">→</span>
             </a>
 
           </div>
