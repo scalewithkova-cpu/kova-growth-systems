@@ -6,9 +6,11 @@ import { CALENDLY_URL, openCalendly, prefetchCalendly } from "@/lib/calendly";
 
 
 const links = [
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#who-we-help", label: "Who We Help" },
-  { href: "#why-kova", label: "Why ScaleWithKova" },
+  { href: "#top", label: "Home" },
+  { href: "#services", label: "Services" },
+  { href: "#process", label: "Our Process" },
+  { href: "#results", label: "Campaign Results" },
+  { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -53,7 +55,7 @@ export function SiteNav() {
           />
         </a>
 
-        <div className="hidden items-center gap-9 lg:flex">
+        <div className="hidden items-center gap-7 lg:flex">
           {links.map((l) => (
             <a
               key={l.href}
@@ -67,7 +69,7 @@ export function SiteNav() {
             href={CALENDLY_URL}
             onClick={openCalendly}
             onMouseEnter={prefetchCalendly}
-            className="btn-lift rounded-full border border-champagne/40 px-5 py-2 text-sm text-champagne hover:bg-champagne hover:text-primary-foreground"
+            className="btn-lift rounded-md bg-champagne px-5 py-2 text-sm font-medium text-primary-foreground"
           >
             Book a Call
           </a>
@@ -104,7 +106,7 @@ export function SiteNav() {
                 setOpen(false);
                 openCalendly(e);
               }}
-              className="btn-lift mt-6 rounded-full bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
+              className="btn-lift mt-6 rounded-md bg-champagne px-6 py-4 text-center text-base font-medium text-primary-foreground"
             >
               Book a Call <span className="btn-arrow">→</span>
             </a>

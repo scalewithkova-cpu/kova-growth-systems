@@ -35,34 +35,35 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
-  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
 }
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.965 0.002 90);
-  --surface: oklch(0.185 0 0);
+  --background: oklch(0.13 0 0);
+  --foreground: oklch(0.97 0 0);
+  --surface: oklch(0.19 0 0);
   --card: oklch(0.185 0 0);
   --card-foreground: oklch(0.965 0.002 90);
   --popover: oklch(0.185 0 0);
   --popover-foreground: oklch(0.965 0.002 90);
-  --primary: oklch(0.82 0.055 78);
+  --primary: oklch(0.74 0.075 82);
   --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.22 0 0);
   --secondary-foreground: oklch(0.965 0.002 90);
   --muted: oklch(0.22 0 0);
-  --muted-foreground: oklch(0.68 0.003 90);
+  --muted-foreground: oklch(0.72 0 0);
   --accent: oklch(0.24 0.01 80);
   --accent-foreground: oklch(0.965 0.002 90);
-  --champagne: oklch(0.82 0.055 78);
-  --champagne-dim: oklch(0.66 0.045 78);
+  --champagne: oklch(0.74 0.075 82);
+  --champagne-dim: oklch(0.6 0.06 82);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(0.27 0 0);
   --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.82 0.055 78 / 50%);
+  --ring: oklch(0.74 0.075 82 / 50%);
 }
 
 .dark {
@@ -150,7 +151,7 @@
   @media (hover: hover) {
     &:hover {
       filter: brightness(1.08);
-      text-shadow: 0 0 18px oklch(0.82 0.055 78 / 22%);
+      text-shadow: 0 0 18px oklch(0.74 0.075 82 / 22%);
     }
   }
 }
@@ -199,7 +200,7 @@
   @media (hover: hover) {
     &:hover {
       transform: translateY(-2px) scale(1.015);
-      box-shadow: 0 6px 26px oklch(0.82 0.055 78 / 18%);
+      box-shadow: 0 6px 26px oklch(0.74 0.075 82 / 18%);
     }
 
     &:hover .btn-arrow {
@@ -219,7 +220,7 @@
   @media (hover: hover) {
     &:hover {
       transform: translateY(-3px);
-      border-color: oklch(0.82 0.055 78 / 35%);
+      border-color: oklch(0.74 0.075 82 / 35%);
       box-shadow: 0 10px 40px oklch(0 0 0 / 35%);
     }
   }
